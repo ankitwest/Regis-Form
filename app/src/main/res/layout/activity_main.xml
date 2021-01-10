@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="209dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="28dp"
+        android:text="Registration Form"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="148dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="32dp"
+        android:text="Spoken Tutorial"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:text="Name"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="190dp" />
+
+    <EditText
+        android:id="@+id/nameTextBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Enter name"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="245dp" />
+
+    <Button
+        android:id="@+id/mysendButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click Here"
+        tools:layout_editor_absoluteX="145dp"
+        tools:layout_editor_absoluteY="657dp" />
+
+    <TextView
+        android:id="@+id/gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="315dp" />
+
+    <RadioGroup
+        android:id="@+id/genderRadioGroup"
+        android:layout_width="174dp"
+        android:layout_height="102dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="371dp">
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="171dp"
+            android:layout_height="37dp"
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/radioButton5"
+            android:layout_width="179dp"
+            android:layout_height="34dp"
+            android:text="Female" />
+
+        <RadioButton
+            android:id="@+id/radioButton6"
+            android:layout_width="174dp"
+            android:layout_height="25dp"
+            android:text="Others" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Department"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="500dp" />
+
+    <Spinner
+        android:id="@+id/deptSpinner"
+        android:layout_width="274dp"
+        android:layout_height="62dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="535dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
